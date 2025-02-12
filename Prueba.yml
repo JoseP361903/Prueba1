@@ -5,6 +5,7 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
+  name: 'Default'
 
 steps:
   - task: DotNetCoreCLI@2
