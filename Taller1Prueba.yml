@@ -11,4 +11,4 @@ steps:
     inputs:
       command: 'build'
       projects: '**/*.csproj'
-      workingDirectory: '$(System.DefaultWorkingDirectory)/SandboxProf'
+      workingDirectory: '$(System.Default)/SandboxProf'
