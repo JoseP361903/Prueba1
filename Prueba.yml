@@ -5,7 +5,7 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
-  name: 'Azure Pipelines'
+  name: 'Default'
 
 steps:
   - task: DotNetCoreCLI@2
