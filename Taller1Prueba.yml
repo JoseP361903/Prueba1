@@ -1,10 +1,9 @@
 
-
 trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest' 
 
 steps:
   - task: DotNetCoreCLI@2
@@ -12,3 +11,4 @@ steps:
       command: 'build'
       projects: '**/*.csproj'
       workingDirectory: '$(System.DefaultworkingDirectory)/SandboxProf'
+
