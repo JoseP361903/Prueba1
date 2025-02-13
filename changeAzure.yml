@@ -1,0 +1,20 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+  name: 'agent'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'build'
+      projects: '**/*.csproj'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/SandboxProf'
+
+
